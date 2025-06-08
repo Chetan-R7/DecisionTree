@@ -9,5 +9,7 @@ y=music_data["genre"]
 model=DecisionTreeClassifier()
 model.fit(X.values,y)
 
-tree.export_graphviz(model,out_file='music-recommender.dot',feature_names=['age','gender'],class_names=sorted(y.unique()),
-                    label='all',rounded=True,filled=True)
+#tree.export_graphviz(model,out_file='music-recommender.dot',feature_names=['age','gender'],class_names=sorted(y.unique()),label='all',rounded=True,filled=True)
+def predict(a,b):
+    predictions=model.predict([[a,b]])
+    return predictions
