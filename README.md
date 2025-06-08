@@ -1,2 +1,2 @@
 # DecisionTee
-My first ever Machine Learning mini-Project
+My first ever Machine Learning mini-Project on Music Recommendation
